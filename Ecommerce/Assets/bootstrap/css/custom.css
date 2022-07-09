@@ -1,0 +1,213 @@
+@keyframes text1{
+    10%{opacity: 1;}
+    50%{opacity: 0;}
+}
+@keyframes text2{
+    40%{opacity: 0;}
+    70%{opacity: 1;}
+}
+@keyframes banner{
+    10%{background-color: rgb(121, 116, 116);}
+    40%{background-color: rgb(111, 108, 114);}
+    80%{background-color: rgb(128, 138, 119);}
+}
+.animated{
+    opacity: 0.7;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* background-color: rgb(121, 118, 118); */
+    animation: banner 10s infinite;
+}
+.banner{
+    width: 100%;
+    height: 400px;
+    background-image: url('animation-bg.jpg');
+    background-size: 100% 100%;
+    margin: auto;
+    position: relative;
+}
+.text1, .text2{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    line-height: 450px;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    opacity: 0;
+    top:38%;
+    bottom: 38%;
+}
+.text1{
+    animation: text1 6s infinite;
+}
+.text2{
+    animation: text2 6s infinite;
+}
+.nav-item a:hover{
+  opacity: 1;
+}
+#demo{
+    height: 60vh;
+}
+.carousel-item{
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;   
+}
+.carousel-item img{
+    height: 150px;
+}
+form{
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+}
+a:hover{
+    text-decoration: none;
+}
+/* Css for about page */
+.body{
+    background-image: url("nice-g72891167a_1280.jpg");
+    height: 400px;
+    width: 100%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    opacity: 1;
+}
+.b-text{
+    color: white;
+    font-weight: bolder;
+    position: relative;
+    text-align: center;
+    line-height: 450px;
+    bottom: 40%;
+    top: 40%;   
+    justify-content: center;
+    align-items: center;
+}
+.agent{
+    margin-bottom: 30px  !important;
+}
+.counters{
+    margin-top: 15vh;
+}
+.owl-carousel{
+    height: 54vh;
+    margin-top: 10px;
+    background-color: whitesmoke;
+    align-items: center;
+}
+.crsl-item{
+    height: 40vh;
+    padding-top: 6vh; 
+    padding-bottom: 6vh; 
+}
+.about{
+    font-size: 40px;
+}
+.header{
+    width: 100%;
+    height: 100vh;
+    background: whitesmoke;
+}
+.side-nav{
+    width: 250px;
+    height: 100%;
+    background: rgb(28, 28, 31);
+    position : fixed;
+    top: 0;
+    left: 0;
+    padding: 20px 10px;
+}
+.logo{
+    display: block;
+    margin-bottom: 130px;
+    justify-content: center;
+}
+.nav-links{
+    list-style: none;
+    position: relative;
+}
+.nav-links li{
+    padding: 10px 0;
+}
+.nav-links li a{
+    color: white;
+    text-decoration: none;
+    padding: 10px 14px;
+    display: flex;
+}
+.nav-links li a i{
+    font-size: 22px;
+    margin-right: 20px;
+}
+.actve{
+    background: white;
+    width: 100%;
+    height: 47px;
+    position: absolute;
+    left: 0;
+    top: 1%;
+    z-index: -1;
+    border-radius: 6px;
+    box-shadow: 0 5px 10px rgba(255, 255, 255, 0.4);
+    display: none;
+    transition: top 0.5s;
+}
+.nav-links li:hover a{
+    color: black;
+    transition: 0.3s;
+}
+.nav-links li:hover ~ .active{
+    display: block;
+}
+.nav-links li:nth-child(1):hover ~ .active{
+    top: 1%;
+}
+.nav-links li:nth-child(2):hover ~ .active{
+    top: 17.6%;
+}
+.nav-links li:nth-child(3):hover ~ .active{
+    top: 34.2%;
+}
+.nav-links li:nth-child(4):hover ~ .active{
+    top: 50.8%;
+}
+.nav-links li:nth-child(5):hover ~ .active{
+    top: 67.4%;
+}
+.nav-links li:nth-child(6):hover ~ .active{
+    top: 84%;
+}
+@media only screen and (max-width: 600px){
+    .side-nav{
+        width: 110px;
+    }
+    .nav-links li a p{
+        display: none;
+    }
+    .nav-links li a i{
+        margin-right: 0;
+    }
+    .nav-links li a{
+        justify-content: center;
+    }
+}
+footer{
+    position: relative;
+    bottom: 0;
+}
+.inline-form{
+    display: inline;
+}
+.counters{
+    background-color: whitesmoke;    
+}
+/* @media screen and (min-width: 600px) {
+    .contact-form{
+        margin-top: 50px !important;
+    }
+} */
